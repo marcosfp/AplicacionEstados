@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
 
             binding.textViewSharedPrefeernces?.setText("")
 
-            val sharedPref = this.getPreferences(Context.MODE_PRIVATE)
             val editor = this.getPreferences(Context.MODE_PRIVATE).edit()
             editor.putString(
                 getString(R.string.ValorGuardado),
@@ -88,7 +87,7 @@ class MainActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         establecervalorVariable("onStart")
-        establecerSharedPrefereneces("OnPause")
+        establecerSharedPrefereneces("onStart")
     }
 
     override fun onPause() {
@@ -116,7 +115,16 @@ class MainActivity : AppCompatActivity() {
         //Valor SharedPreferences
         val sharedPref = this?.getPreferences(Context.MODE_PRIVATE)
         val valorGuardado = sharedPref?.getString(getString(R.string.ValorGuardado), "No hay valor")
-        binding.textViewSharedPrefeernces?.setText( " $estado: \n Shared Preferences" + valorGuardado)
+
+        val nuevoValor = " $estado: \n Shared Preferences" + valorGuardado
+
+        val editor = this.getPreferences(Context.MODE_PRIVATE).edit()
+        sharedPref?.edit()?.putString(
+            getString(R.string.ValorGuardado),
+            nuevoValor
+        )?.commit()
+
+        binding.textViewSharedPrefeernces?.setText( nuevoValor)
 
         Toast.makeText(this, "$estado", Toast.LENGTH_LONG).show()
     }
