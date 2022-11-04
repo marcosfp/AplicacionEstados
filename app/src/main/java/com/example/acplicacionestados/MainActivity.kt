@@ -116,7 +116,7 @@ class MainActivity : AppCompatActivity() {
         //Valor SharedPreferences
         val sharedPref = this?.getPreferences(Context.MODE_PRIVATE)
         val valorGuardado = sharedPref?.getString(getString(R.string.ValorGuardado), "No hay valor")
-        binding.textViewSharedPrefeernces?.setText(binding.editTextVariable?.text.toString() + "\n $estado: " + valorGuardado)
+        binding.textViewSharedPrefeernces?.setText( " $estado: \n Shared Preferences" + valorGuardado)
 
         Toast.makeText(this, "$estado", Toast.LENGTH_LONG).show()
     }
