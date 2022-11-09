@@ -4,26 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#ace5ee"
+    tools:context=".fragmentos.Fragment1">
 
+    <!-- TODO: Update blank fragment layout -->
 
     <Button
-        android:id="@+id/buttoEstados"
-        android:layout_width="200dp"
+        android:id="@+id/buttonFragment1"
+        android:layout_width="234dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="261dp"
-        android:text="Estados"
+        android:layout_marginTop="100dp"
+        android:text="Incrementar Marcador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFragmento1" />
+
+    <TextView
+        android:id="@+id/tvFragmento1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Fragmento1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonMarcador"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:text="Marcador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoEstados" />
 </androidx.constraintlayout.widget.ConstraintLayout>

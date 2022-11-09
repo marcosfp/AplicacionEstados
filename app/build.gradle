@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.acplicacionestados"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,8 +47,10 @@ dependencies {
     //lifecycle.-ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
 
-    def activity_version = "1.5.1"
+    def activity_version = "1.6.0"
     implementation("androidx.activity:activity-ktx:$activity_version")
+    implementation("androidx.fragment:fragment-ktx:1.5.3")
+
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
     testImplementation 'junit:junit:4.13.2'

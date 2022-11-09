@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout-land/activity_estados.xml" value="0.28229166666666666" />
         <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout-land/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/activity_estados.xml" value="0.25" />
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/activity_fragmento.xml" value="0.4041666666666667" />
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/fragment_1.xml" value="0.4041666666666667" />
+        <entry key="..\:/Users/madrid/AndroidStudioProjects/AcplicacionEstados/app/src/main/res/layout/fragment_2.xml" value="0.24596774193548387" />
       </map>
     </option>
   </component>
